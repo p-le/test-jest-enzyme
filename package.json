@@ -7,6 +7,11 @@
     "start": "./node_modules/.bin/webpack-dev-server",
     "test": "./node_modules/.bin/jest"
   },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(css|scss)$": "<rootDir>/src/__mocks__/styleMock.js"
+    }
+  },
   "dependencies": {
     "classnames": "^2.2.5",
     "history": "^4.6.3",
@@ -32,6 +37,7 @@
     "eslint-plugin-react": "^7.1.0",
     "extract-text-webpack-plugin": "^2.1.2",
     "html-webpack-plugin": "^2.29.0",
+    "identity-obj-proxy": "^3.0.0",
     "jest": "^20.0.4",
     "node-sass": "^4.5.3",
     "react-test-renderer": "^15.6.1",

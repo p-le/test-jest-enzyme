@@ -10,7 +10,7 @@ class SideMenu extends Component {
     const classes = classnames({
       [styles.container]: true,
       [styles.containerActive]: open
-    })
+    });
 
     return (
       <aside className={classes}>
