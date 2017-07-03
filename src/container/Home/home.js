@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { bind } from '../../utils/bind';
+import SideMenu from '../../components/SideMenu/sidemenu';
 
 class Home extends Component {
   constructor(props) {
@@ -19,7 +20,8 @@ class Home extends Component {
   render() {
     return(
       <div>
-        <button type="button" onClick={this.handleOpenSideMenu}>Open</button>
+        <button type="button" onClick={this.handleOpenSideMenu} open={this.state.openSideMenu} >Open</button>
+        <SideMenu />
         Home
       </div>
     );
