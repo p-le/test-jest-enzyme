@@ -9,8 +9,15 @@
   },
   "jest": {
     "moduleNameMapper": {
-      "\\.(css|scss)$": "<rootDir>/src/__mocks__/styleMock.js"
-    }
+      "\\.(css|scss)$": "<rootDir>/__mocks__/styleMock.js"
+    },
+    "collectCoverage": true,
+    "collectCoverageFrom": [ "**/src/**/*.{js,jsx}", "!**/node_modules/**"],
+    "coverageDirectory": "<rootDir>/__coverage__",
+    "coverageReporters": ["json", "html"],
+    "setupFiles": [
+      "<rootDir>/__config__/setup.js"
+    ]
   },
   "dependencies": {
     "classnames": "^2.2.5",
